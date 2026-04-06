@@ -152,7 +152,7 @@ def init_assets():
             
     # Дельфин
     try:
-        d_img = pygame.image.load("dolphin.png").convert_alpha()
+        d_img = pygame.image.load(os.path.join("assets", "11", "dolphin.png")).convert_alpha()
         DOLPHIN_IMAGE = pygame.transform.scale(d_img, (100, 100))
     except:
         DOLPHIN_IMAGE = pygame.Surface((100, 50), pygame.SRCALPHA)
